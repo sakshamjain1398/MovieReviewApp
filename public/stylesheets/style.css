@@ -1,0 +1,191 @@
+.navbar-default {
+  background-color: #b71c1c;
+  border-color: #e53935;
+}
+.navbar-default .navbar-brand {
+  color: #f2f4f5;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ecdbff;
+}
+.navbar-default .navbar-text {
+  color: #f2f4f5;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #f2f4f5;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ecdbff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #b71c1c;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #f2f4f5;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ecdbff;
+  background-color: #e53935;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+  background-color: #e53935;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ecdbff;
+  background-color: #e53935;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ecdbff;
+  background-color: #e53935;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ecdbff;
+  background-color: #e53935;
+}
+.navbar-default .navbar-toggle {
+  border-color: #e53935;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #e53935;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f2f4f5;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #f2f4f5;
+}
+.navbar-default .navbar-link {
+  color: #f2f4f5;
+}
+.navbar-default .navbar-link:hover {
+  color: #ecdbff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f2f4f5;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ecdbff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecdbff;
+    background-color: #e53935;
+  }
+}
+body{
+  background-color: #212121;
+  color: white;
+}
+.list-group-item{
+  background:none;
+  border:none;
+  margin:10px 0;
+  background:#424242;
+  color: white;
+}
+.page_nav{
+  text-align: center;
+  font-size: 30px;
+}
+
+.selectpicker{
+  padding: 4px 10px 7px 10px;
+  border:2px solid transparent;
+  color: black;
+  border-radius: 2px;
+  appearance: none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  margin-bottom: 5px;
+background:url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") 96% / 15% no-repeat #FFFFFF;
+  width:170px;
+}
+@media screen and (max-width:767px ){
+  .selectpicker{
+    width:100%;
+  }
+}
+#imdb_icon{
+  color:#E5BB25;
+  font-size:1.5em;
+}
+.nav_button{
+  background :none;
+   color:white;
+}
+.movie_cards{
+  background:#424242;
+  padding:35px;
+  border-radius:10px;
+  margin-bottom:30px;
+  margin-top: 10px;
+}
+#plotAndRating{
+ margin-left: 20px; 
+}
+.movie_title{
+  background:#424242;
+  font-family: 'Roboto Slab', serif;
+  font-size:50px;
+}
+#movie_genre{
+  text-align:right;
+  display:block;
+  font-size:25px;
+  margin:2px;
+}
+.error-template{
+  padding: 40px 15px;
+  text-align: center;
+}
+.error-actions {
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.error-actions .btn {
+ margin-right:10px;
+ }
+ .review_style{
+  background:#616161;
+  padding:5px;
+  margin-bottom:10px;
+  border-radius:10px;
+  padding-left:15px;
+ }
+ #delete_button:hover{
+  text-decoration: underline;
+ }
+ textarea{
+  width: 100%;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px){
+#movie_poster{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#plotAndRating{
+margin-left: none;
+}
+}

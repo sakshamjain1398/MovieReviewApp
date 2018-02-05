@@ -1,0 +1,43 @@
+<% include partials/header %>
+
+<div class="container">
+<h1>Search Results</h1>
+<ul class="list-group">
+<% data["Search"].forEach(function(movie,i){ %>
+	<a href="/<%=movie["imdbID"]%>">
+	<li class="list-group-item">
+	<div class="row">
+	<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+	<%if(movie["Poster"]=="N/A"){%>
+		<%movie["Poster"]="https://vignette.wikia.nocookie.net/janethevirgin/images/4/42/Image-not-available_1.jpg/revision/latest?cb=20150721102313";%>
+		<%}%>
+	<img src="	<%= movie["Poster"] %>	" class="img-thumbnail" style="height:200px ">
+	</div>
+	<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+	
+	<strong><%= movie["Title"]%></strong> 
+	<br/>
+	Year:
+	<%= movie["Year"]%>
+	</div>
+	
+	</div>
+	</li>
+	</a>
+<% }) %>
+</ul>
+<div class="page_nav">
+<% if(page_num!=1){ %>
+		<% var prevpg=Number(page_num)-1%>
+<a href="/search/<%=movie_name%>/<%=prevpg%>">
+	<button class="btn nav_button"><i class="fa fa-chevron-left" aria-hidden="true" ></i></button>
+	</a>
+<% } %>
+<%= page_num %>
+<%if(page_num!=totalpg){%>
+<%var nextpg=Number(page_num)+1%>
+<a href="/search/<%=movie_name%>/<%=nextpg%>"><button class="btn nav_button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button></a>
+<%}%>
+</div>
+</div>
+<% include partials/footer %>
